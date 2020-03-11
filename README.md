@@ -2,8 +2,8 @@
 
  Personal records about problem solving.
 
-## Algorithms
+### [Algorithms](algorithms/README.md)
 
-## Database
+### [Database](database/README.md)
 
-## Shell
+### [Shell](shell/README.md)
