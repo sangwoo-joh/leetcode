@@ -6,6 +6,8 @@
  *     ListNode(int x) : val(x), next(NULL) {}
  * };
  */
+
+/* Using two iteration */
 class Solution {
 public:
   ListNode *addTwoNumbers(ListNode *l1, ListNode *l2) {
@@ -60,6 +62,54 @@ public:
     if (acc->val == 0) {
       delete acc;
       prev->next = NULL;
+    }
+
+    return result;
+  }
+};
+
+/* Using one iteration */
+/**
+ * Definition for singly-linked list.
+ * struct ListNode {
+ *     int val;
+ *     ListNode *next;
+ *     ListNode(int x) : val(x), next(NULL) {}
+ * };
+ */
+class Solution {
+public:
+  ListNode *addTwoNumbers(ListNode *l1, ListNode *l2) {
+    // copy one
+    ListNode *result = new ListNode(0);
+    ListNode *iter = result, *prev = result;
+    int carry = 0;
+
+    while (l1 != NULL || l2 != NULL) {
+      int v1 = (l1 == NULL ? 0 : l1->val);
+      int v2 = (l2 == NULL ? 0 : l2->val);
+
+      int v = v1 + v2 + carry;
+      carry = v / 10;
+
+      iter->val = v % 10;
+      iter->next = new ListNode(0);
+
+      if (l1 != NULL)
+        l1 = l1->next;
+      if (l2 != NULL)
+        l2 = l2->next;
+      prev = iter;
+      iter = iter->next;
+    }
+
+    if (carry != 0) {
+      iter->val = carry;
+    }
+
+    if (iter->val == 0) {
+      prev->next = NULL;
+      delete iter;
     }
 
     return result;
