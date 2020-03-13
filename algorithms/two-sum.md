@@ -1,3 +1,8 @@
+# [1. Two Sum](https://leetcode.com/problems/two-sum/)
+
+## Solution
+
+``` c++
 class Solution {
 public:
   vector<int> twoSum(vector<int> &nums, int target) {
@@ -20,3 +25,4 @@ public:
     return answer;
   }
 };
+```

@@ -1,3 +1,8 @@
+# [121. Best Time to Buy and Sell Stock](https://leetcode.com/problems/best-time-to-buy-and-sell-stock/)
+
+## Solution
+
+``` c++
 class Solution {
 public:
   int maxProfit(vector<int> &prices) {
@@ -17,3 +22,4 @@ public:
     return max_profit;
   }
 };
+```
