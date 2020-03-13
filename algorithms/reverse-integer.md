@@ -1,9 +1,14 @@
 # [7. Reverse Integer](https://leetcode.com/problems/reverse-integer/)
 
+## Note
+ - We can optimize by hoisting some constant calculations. In this
+   case, the positive check and cap value.
+
 ## Solution
 
+### Optimized
+
 ``` c++
-/* Hand optimization by hoisting*/
 class Solution {
 public:
   int reverse(int x) {
@@ -28,8 +33,11 @@ public:
     return answer;
   }
 };
+```
 
-/* First version */
+### First try
+
+``` c++
 class Solution {
 public:
   int reverse(int x) {
