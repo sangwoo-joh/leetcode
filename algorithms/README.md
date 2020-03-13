@@ -9,8 +9,7 @@
    Integer](https://leetcode.com/problems/reverse-integer/):
    [code](reverse-integer.cpp)
  - [17. Letter Combinations of a Phone
-   Number](https://leetcode.com/problems/letter-combinations-of-a-phone-number/):
-   [code](letter-combinations-of-a-phone-number.md)
+   Number](letter-combinations-of-a-phone-number.md)
  - [121. Best Time to Buy and Sell
    Stock](https://leetcode.com/problems/best-time-to-buy-and-sell-stock/):
    [code](best-time-to-buy-and-sell-stock.cpp)
