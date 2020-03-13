@@ -1,6 +1,14 @@
 # [2. Add Two Numbers](https://leetcode.com/problems/add-two-numbers/)
 
+## Note
+ - Remember the elementary addition logic: carry
+ - If we make a node everytime we meet list value, then it could have
+   meaningless `0` which should be removed after whole iterations.
+
 ## Solutions
+
+### Using two iterations
+
 ``` c++
 /**
  * Definition for singly-linked list.
@@ -11,7 +19,6 @@
  * };
  */
 
-/* Using two iteration */
 class Solution {
 public:
   ListNode *addTwoNumbers(ListNode *l1, ListNode *l2) {
@@ -71,8 +78,11 @@ public:
     return result;
   }
 };
+```
 
-/* Using one iteration */
+### Using one iteration
+
+``` c++
 /**
  * Definition for singly-linked list.
  * struct ListNode {
