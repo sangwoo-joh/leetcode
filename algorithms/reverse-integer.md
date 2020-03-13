@@ -1,3 +1,8 @@
+# [7. Reverse Integer](https://leetcode.com/problems/reverse-integer/)
+
+## Solution
+
+``` c++
 /* Hand optimization by hoisting*/
 class Solution {
 public:
@@ -44,3 +49,4 @@ public:
     return answer;
   }
 };
+```
